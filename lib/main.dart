@@ -36,6 +36,7 @@ class MyHome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color(0xff000000),
       drawer: NavDrawer(),
       appBar: AppBar(
         title: Text('Side menu'),
