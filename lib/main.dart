@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/profilepage.dart';
+import 'package:flutter_app/dashboard.dart';
+import 'package:flutter_app/settingpage.dart';
+import 'package:flutter_app/trending page.dart';
 
 import 'login_page.dart';
 
@@ -9,18 +12,37 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      initialRoute: '/',
+
       title: 'Flutter Login',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
+      initialRoute: '/',
       routes: {
         // When navigating to the "/" route, build the FirstScreen widget.
-        '/': (context) => MyHomePage(),
-        // When navigating to the "/second" route, build the SecondScreen widget.
-        '/second': (context) => LoginPage(),
-      },
+        '/': (navdrawer) => MyHome(),
 
+        // When navigating to the "/second" route, build the SecondScreen widget.
+        '/profile': (context) => MyHomePage(),
+        '/settings': (context) => SettingsThreePage(),
+        '/trending' : (context) => Trending()
+
+      },
+    );
+  }
+}
+
+class MyHome extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      drawer: NavDrawer(),
+      appBar: AppBar(
+        title: Text('Side menu'),
+      ),
+      body: Center(
+        child: Text('Side Menu Tutorial'),
+      ),
     );
   }
 }
