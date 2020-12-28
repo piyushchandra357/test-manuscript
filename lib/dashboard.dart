@@ -20,9 +20,9 @@ class NavDrawer extends StatelessWidget {
                     image: AssetImage('assets/images/cover.jpg'))),
           ),
           ListTile(
-            leading: Icon(Icons.input),
-            title: Text('Trending'),
-            onTap: () => {Navigator.pushNamed(context, '/trending')},
+            leading: Icon(Icons.border_color),
+            title: Text('Home'),
+            onTap: () => {Navigator.pushNamed(context, '/bottomnavigtation')},
           ),
           ListTile(
 
@@ -37,11 +37,7 @@ class NavDrawer extends StatelessWidget {
             title: Text('Settings'),
             onTap: () => {Navigator.pushNamed(context, '/settings')},
           ),
-          ListTile(
-            leading: Icon(Icons.border_color),
-            title: Text('Feedback'),
-            onTap: () => {Navigator.of(context).pop()},
-          ),
+
           ListTile(
 
             leading: Icon(Icons.exit_to_app),

@@ -3,6 +3,7 @@ import 'package:flutter_app/profilepage.dart';
 import 'package:flutter_app/dashboard.dart';
 import 'package:flutter_app/settingpage.dart';
 import 'package:flutter_app/trending page.dart';
+import 'package:flutter_app/navigationbar.dart';
 
 import 'login_page.dart';
 
@@ -25,7 +26,8 @@ class MyApp extends StatelessWidget {
         // When navigating to the "/second" route, build the SecondScreen widget.
         '/profile': (context) => MyHomePage(),
         '/settings': (context) => SettingsThreePage(),
-        '/trending' : (context) => Trending()
+        '/trending' : (context) => Trending(),
+        '/bottomnavigtation' : (context)  => MyNavigationBar(),
 
       },
     );
