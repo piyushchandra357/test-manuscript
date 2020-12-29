@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "671774358462",
+    "project_id": "aditya-test-3fbbb",
+    "storage_bucket": "aditya-test-3fbbb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:671774358462:android:891962265efd1bc8ef97ef",
+        "android_client_info": {
+          "package_name": "com.example.flutter_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "671774358462-vq12mdhbd6soqa2a2cgppov1e70c5hba.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.flutter_app",
+            "certificate_hash": "67403c3a4c63af4f710f3dc893327b6f8ec9bd95"
+          }
+        },
+        {
+          "client_id": "671774358462-fhil3ilhsvh5pnfbv3h7n5aei8og91au.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUjSJsF4XUVeqeGWxkAUdDPmqmSHAX6Rc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "671774358462-fhil3ilhsvh5pnfbv3h7n5aei8og91au.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
