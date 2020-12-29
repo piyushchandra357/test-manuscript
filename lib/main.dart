@@ -4,6 +4,7 @@ import 'package:flutter_app/dashboard.dart';
 import 'package:flutter_app/settingpage.dart';
 import 'package:flutter_app/trending page.dart';
 import 'package:flutter_app/navigationbar.dart';
+import 'package:google_sign_in/google_sign_in.dart';
 
 import 'login_page.dart';
 
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         // When navigating to the "/" route, build the FirstScreen widget.
-        '/': (navdrawer) => MyHome(),
+        '/': (navdrawer) => LoginPage(),
 
         // When navigating to the "/second" route, build the SecondScreen widget.
         '/profile': (context) => MyHomePage(),
